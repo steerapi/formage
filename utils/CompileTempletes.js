@@ -20,10 +20,11 @@ jadeFiles.forEach(function(file) {
     var filePath = path.join(__dirname, '..', 'views', file);
     var src = fs.readFileSync(filePath);
     try {
-        var compiled = jade.compileClient(src, {
+        var compiled = jade.compile(src, {
             'debug': false,
             'pretty': true,
             'compileDebug': false,
+            'client': true,
             'filename': filePath
         });
         js += "module.exports." + key + " = " + compiled.toString() + "; \n\n";
