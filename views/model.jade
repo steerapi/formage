@@ -88,12 +88,12 @@ block body
                     - if (newTypes.length === 0)
                         a.btn.pull-right.btn-warning(href="#{rootPath}/model/#{model_name}/document/new#{makeLink()}")
                             i.icon-plus.icon-white
-                            &nbsp;New Item&nbsp;
+                            | &nbsp;New Item&nbsp;
                     - else
                         div.btn-group.pull-right
                             button.btn.btn-warning.dropdown-toggle(type="button", data-toggle="dropdown")
                                 i.icon-plus.icon-white
-                                &nbsp;New Item&nbsp;
+                                | &nbsp;New Item&nbsp;
                             ul.dropdown-menu
                                 - each type in newTypes
                                     li: a(href="#{rootPath}/model/#{type}/document/new#{makeLink()}") #{type}
