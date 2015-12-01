@@ -33,7 +33,9 @@
     "mpromise": "^0.5.5",
     "node-ckeditor": "",
     "nodestrum": "",
-    "serve-static": "^1.6.3"
+    "serve-static": "^1.6.3",
+    "mongoose": "^4.2.4",
+    "kerberos": "~0.0"
   },
   "description": "Admin GUI addon for mongoose, jugglingdb, or just as a form generator",
   "devDependencies": {
@@ -44,8 +46,7 @@
     "jade": "0.35.x",
     "jshint": "",
     "jugglingdb": "",
-    "mocha": "",
-    "mongoose": "unstable"
+    "mocha": ""
   },
   "directories": {
     "example": "./example"
@@ -121,5 +122,5 @@
     "start": "node example/classic/app",
     "test": "npm run generate && mocha"
   },
-  "version": "3.2.26"
+  "version": "3.2.27"
 }
