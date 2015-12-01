@@ -201,7 +201,7 @@ if (!dialog)
 {
 buf.push("\n    <header class=\"navbar navbar-static-top\">\n      <div class=\"navbar-inner\">\n        <div class=\"container\">\n          <h1><a" + (jade.attrs({ terse: true, 'href':('' + (rootPath) + '/') }, {"href":true})) + ">" + (jade.escape((jade.interp = adminTitle) == null ? '' : jade.interp)) + "</a>\n          </h1>\n        </div>\n      </div>\n    </header>");
 }
-buf.push("\n    <div class=\"container-fluid formage\">\n      <div id=\"content\">\n        <form id=\"login\" role=\"form\" method=\"post\" action=\"#\" class=\"form-horizontal\">");
+buf.push("\n    <div class=\"container-fluid formage\">\n      <div id=\"content\">\n        <form id=\"login\" style=\"padding-top: 50px;\" role=\"form\" method=\"post\" action=\"#\" class=\"form-horizontal\">");
 if ( (error))
 {
 buf.push("\n          <p class=\"controls\"><strong class=\"text-error\">Wrong username or password.</strong></p>");
